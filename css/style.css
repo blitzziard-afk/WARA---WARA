@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  min-height: 100%;
+  overflow-x: hidden;
+  background: url("/PROYECTO WARA QR/img/fondo4.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.titulo-principal {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 10;
+  white-space: normal;
+  overflow: hidden;
+  animation: escribir 2s steps(20, end) forwards;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  will-change: transform;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+#logo-servicios h2,
+#logo-servicios h3.text-warning,
+#logo-servicios h3[style*="color: black"] {
+  font-size: 2.8rem;
+  color: #f2a900;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn-custom {
+  background: #f2a900;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: 1px solid white;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s, background 0.3s;
+  width: 250px;
+  height: 90px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.btn-custom:hover {
+  background: #333333;
+  transform: scale(1.08);
+}
+
+.contenido {
+  display: none;
+  background-color: #bfbfbf;
+  color: #111;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  animation: fadeIn 0.4s ease-in-out;
+  z-index: 3;
+  position: relative;
+  margin: 2rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid #999;
+}
+
+.contenido.show {
+  display: block;
+}
+
+.pilares-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pilares-title {
+  font-size: 2.6rem;
+  color: #f2a900;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.excelencia-title {
+  font-size: 2.3rem;
+  color: red;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.pilares-container {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #1a1a1a;
+  padding: 3rem 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+}
+
+.fila-pilares {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.pilar {
+  background-image: url("https://www.transparenttextures.com/patterns/marble.png");
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding: 1rem;
+  text-align: left;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.pilar .techo {
+  background: #f2a900;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  position: relative;
+  border-bottom: 3px solid #222;
+  text-shadow: 1px 1px 1px white;
+}
+
+.pilar .techo::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 25px solid #f2a900;
+}
+
+.pilar .cuerpo {
+  padding: 15px;
+  background: white;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 35px;
+}
+
+.pilar p {
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.base-pilares {
+  width: 100%;
+  height: 40px;
+  background: #f2a900;
+  border-top: 4px solid black;
+  border-bottom: 10px solid black;
+  border-radius: 0 0 15px 15px;
+  margin-top: -20px;
+  flex-shrink: 0;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.video-responsive {
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-responsive video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.conceptual-footer {
+  position: relative;
+  width: 100%;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  font-family: "Poppins", "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: none;
+  background-color: rgba(242, 169, 0, 0.6);
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+  .logo {
+    width: 220px;
+    height: 220px;
+  }
+  .btn-custom {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    margin: 5px auto;
+    padding: 10px 15px;
+  }
+  .fila-pilares {
+    flex-wrap: wrap !important;
+    overflow-x: visible;
+  }
+  .pilar {
+    min-width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .conceptual-footer {
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: left;
+  }
+  .contenido {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .conceptual-footer {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  #logo-servicios h2,
+  #logo-servicios h3 {
+    font-size: 2rem !important;
+  }
+  .logo {
+    max-width: 200px;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .titulo-principal {
+    margin-top: 1rem;
+  }
+  .logo {
+    max-width: 150px;
+  }
+}
+
+/* Efectos hover */
+.hover-scale {
+  transition: transform 0.3s ease, color 0.2s ease;
+  display: inline-block;
+  will-change: transform;
+}
+
+.hover-scale:hover {
+  transform: scale(1.2);
+  color: white !important;
+}
+
+footer {
+  z-index: 10;
+}

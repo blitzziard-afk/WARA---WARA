@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WARA WARA Seguridad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container-fluid">
+    <h1 class="titulo-principal text-center">BIENVENIDO A LA EMPRESA</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center logo-container">
+        <img src="/PROYECTO WARA QR/img/logo 2.png" alt="Logo WARA" class="logo" onclick="mostrar('logo-servicios')" />
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-10">
+        <div class="row justify-content-center">
+          <div class="col-md-3 text-md-end text-center">
+            <button class="btn-custom" onclick="mostrar('mision')">MISIÓN</button>
+            <button class="btn-custom" onclick="mostrar('vision')">VISIÓN</button>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-3 text-md-start text-center">
+            <button class="btn-custom" onclick="mostrar('servicios')">PILARES FUNDAMENTALES</button>
+            <button class="btn-custom" onclick="mostrar('valores')">VALORES</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conceptual-footer">
+      "NUESTRO OBJETIVO ES CONSTRUIR RELACIONES PROFESIONALES SOLIDAS Y DURADERAS CON NUESTROS CLIENTES,
+      FOMENTANDO SU CONFIANZA Y FORTALECIENDO SU BASE MEDIANTE SOLUCIONES DE SEGURIDAD OPTIMIZADAS."
+    </div>
+  </div>
+  <div id="logo-servicios" class="contenido container">
+    <h2 class="text-center mb-4" style="font-weight: 600; font-size: 2.5rem;">NUESTRO SERVICIO</h2>
+    <!--Video -->
+    <div class="video-responsive">
+      <video controls>
+        <source src="/PROYECTO WARA QR/video/Nuestro Servicio.mp4" type="video/mp4" />
+        Tu navegador no soporta video.
+      </video>
+    </div>
+    <p class="lead text-center mb-4">
+      La seguridad de su empresa es nuestra prioridad.<br>
+      En WARA, trabajamos de forma continua para optimizar los niveles de seguridad en las instalaciones de nuestros clientes. Nuestro servicio de Seguridad y Vigilancia cumple con los más rigurosos estándares de calidad, adaptándose a los requerimientos específicos de cada organización.
+    </p>
+    <h3 class="mt-5 mb-3 text-center text-warning">ÁREA DE SERVICIO QUE PRESTAMOS</h3>
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-center">
+        <img src="/PROYECTO WARA QR/img/IMAGEN 1.jpg" alt="Supervisor de Seguridad Privada" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <center><h4>SUPERVISOR DE SEGURIDAD PRIVADA</h4></center>
+        <p>
+          Es el encargado de coordinar, controlar y verificar las actividades del personal de vigilancia en los distintos puestos asignados. Su labor incluye realizar mínimo dos recorridos diarios para inspeccionar el cumplimiento de los protocolos de seguridad, el estado físico del vigilante, su presentación personal, y el correcto funcionamiento del equipo asignado.
+        </p>
+        <p>
+          Para una respuesta rápida ante incidentes, novedades o emergencias, el supervisor se moviliza en motocicleta, lo que le permite mayor agilidad y cobertura operativa.
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center mb-4 flex-md-row-reverse">
+      <div class="col-md-6 text-center">
+        <img src="/PROYECTO WARA QR/img/IMAGEN 2.jpg" alt="Su tranquilidad es nuestra prioridad" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <center><h4>SU TRANQUILIDAD ES NUESTRA PRIORIDAD</h4></center>
+        <p>
+          Trabajamos cada día para elevar los estándares de seguridad en las instalaciones de nuestros clientes. Por ello, ofrecemos un servicio de Seguridad y Vigilancia respaldado por los más altos niveles de calidad y compromiso.
+        </p>
+      </div>
+    </div>
+    <h3 class="mt-5 mb-3 text-center text-warning">ÁREA DE CAPACITACIONES</h3>
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-center">
+        <img src="/PROYECTO WARA QR/img/IMAGEN 3.jpg" alt="Capacitación Recursos Humanos 1" class="img-fluid rounded shadow mb-3">
+        <img src="/PROYECTO WARA QR/img/IMAGEN 4.jpg" alt="Capacitación Recursos Humanos 2" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <center><h4>CAPACITACION DE RECURSOS HUMANOS</h4></center>
+        <p>
+          La capacitación de nuestro personal constituye un pilar fundamental para garantizar la calidad del servicio de seguridad que ofrece WARA.
+        </p>
+        <p>
+          En este sentido, el entrenamiento se concibe como un proceso educativo, estratégico y sistemático, a través del cual el personal adquiere los conocimientos y destrezas para desempeñar su labor de manera eficiente, eficaz y alineada a las necesidades de nuestros clientes.
+        </p>
+      </div>
+    </div>
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-center">
+        <img src="/PROYECTO WARA QR/img/IMAGEN 7.jpg" alt="Perfil del Vigilante 3" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <center><h4>PERFIL DEL VIGILANTE</h4></center>
+        <p>
+          El personal asignado al servicio de seguridad y vigilancia será seleccionado rigurosamente, cumpliendo con seis aspectos fundamentales que garantizan su idoneidad para el cargo y la calidad del servicio prestado.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="mision" class="contenido container">
+    <p>Brindar servicios de seguridad y protección de excelencia, con el objetivo de consolidarnos como la empresa número uno en Bolivia, destacando por nuestra confiabilidad, compromiso y enfoque en la mejora continua.. </p>
+  </div>
+  <div id="vision" class="contenido container">
+    <p>Desarrollar y ofrecer soluciones de seguridad de vanguardia, basadas en tecnología avanzada, adaptadas a las necesidades de cada cliente, que protejan hogares y espacios de trabajo, y contribuyan de manera sostenible a la tranquilidad y bienestar de la comunidad.             
+    </p>
+  </div>
+  <div id="servicios" class="contenido container">
+    <div class="pilares-header">
+      <h2 class="pilares-title">PILARES FUNDAMENTALES</h2>
+      <p class="text-center mx-auto" style="max-width:800px;">
+        La empresa de seguridad WARA fue fundada el 29 de octubre de 2016 y actualmente cuenta con 8 años de experiencia consolidada en el mercado nacional, ofreciendo soluciones confiables y de calidad.
+      </p>
+    </div>
+    <h2 class="excelencia-title">EXCELENCIA EN SEGURIDAD</h2>
+    <div class="pilares-container">
+      <div class="row g-4">
+        <!-- Pilar 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="pilar h-100">
+            <div class="techo">EVALUACION DE RIESGOS Y CONTROL DE ACCESOS</div>
+            <div class="cuerpo">
+              <p>
+                ➤Identificar amenazas y vulnerabilidades, estableciendo prioridades de protección según su nivel de riesgo.<br>
+                ➤Evaluar el impacto potencial de posibles incidentes sobre la seguridad.<br>
+                ➤Implementar sistemas de control de acceso aplicando tecnologías avanzadas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Pilar 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="pilar h-100">
+            <div class="techo">VIGILANCIA Y RESPUESTA A INCIDENTES</div>
+            <div class="cuerpo">
+              <p>
+                ➤Contar con personal de seguridad altamente capacitado.<br>
+                ➤Desarrollar protocolos claros y efectivos para la gestión de emergencias.<br>
+                ➤Coordinar con autoridades locales para asegurar una respuesta rápida y efectiva.<br>
+                ➤Implementar sistemas de videovigilancia para la supervisión continua de las instalaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Pilar 3 -->
+        <div class="col-lg-4 col-md-12">
+          <div class="pilar h-100">
+            <div class="techo">CAPACITACION DEL PERSONAL Y CULTURA DE SEGURIDAD</div>
+            <div class="cuerpo">
+              <p>
+                ➤Proporcionar formación continua a los empleados sobre seguridad física y procedimientos de emergencia.<br>
+                ➤Educar al personal sobre la importancia de la seguridad y los protocolos para reportar actividades sospechosas.<br>
+                ➤Fomentar una cultura de seguridad en la que todos los colaboradores se sientan responsables de proteger las instalaciones.<br>
+                ➤Crear un ambiente laboral donde la seguridad sea una prioridad compartida por todos<br>
+                ➤Promover la comunicación abierta sobre temas de seguridad y estimular la participación activa de todos en la protección de la empresa.<br>
+                ➤Reconocer y recompensar el comportamiento seguro y la vigilancia proactiva como parte fundamental del compromiso colectivo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="base-pilares"></div>
+    </div>
+  </div>
+  </div>
+  <div id="valores" class="contenido container">
+    <ul>
+      ➤Creemos que el mayor capital de nuestra empresa es nuestro equipo humano.<br>
+      ➤Valoramos a nuestros proveedores de bienes y servicios como aliados estratégicos.<br>
+      ➤Estamos convencidos de que la competencia sana y el libre mercado nos impulsan a ser más competitivos y a ofrecer lo mejor a nuestros clientes.<br>
+      ➤El éxito y la excelencia se alcanzan gracias a la combinación del talento, la competitividad y el profesionalismo de nuestros colaboradores.
+    </ul>
+  </div>
+    <!-- Redes sociales y autor -->
+    <footer class="text-center py-4 bg-dark bg-opacity-75 position-relative z-3">
+      <div class="social-icons mb-3">
+        <a href="https://facebook.com" target="_blank" class="text-warning mx-3 fs-3 hover-scale">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="text-warning mx-3 fs-3 hover-scale">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://wa.me/59177974434?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20seguridad" 
+           target="_blank" class="text-warning mx-3 fs-3 hover-scale">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="mailto:tucorreo@ejemplo.com" target="_blank" class="text-warning mx-3 fs-3 hover-scale">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+      <div class="text-warning small">
+        Creado por <strong>@Daniel Amaru</strong> &copy; <span id="current-year">2025</span>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
+</body>
+</html>
