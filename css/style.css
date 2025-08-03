@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   min-height: 100%;
   overflow-x: hidden;
   background: url("../img/fondo4.jpg") no-repeat center center fixed;
@@ -49,13 +49,9 @@ body {
 }
 
 .logo {
-  width: 100%;
-  max-width: 300px;
+  max-width: 310px;
   height: auto;
-  border-radius: 50%;
   object-fit: cover;
-  border: 2px solid white;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
   transition: transform 0.3s ease;
   cursor: pointer;
   display: block;
@@ -88,13 +84,12 @@ body {
   font-weight: bold;
   border: 1px solid white;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
-  transition: transform 0.3s, background 0.3s;
+  transition: all 0.3s;
   width: 250px;
   height: 90px;
   margin: 10px;
   position: relative;
   z-index: 1;
-  will-change: transform;
 }
 
 .btn-custom:hover {
@@ -262,6 +257,100 @@ p {
   border-bottom: 1px solid #aaa;
 }
 
+.conceptual-footer.hidden {
+  display: none !important;
+}
+
+/* Ajuste global de textos */
+.contenido p,
+.contenido ul,
+.contenido li,
+#logo-servicios .lead,
+.pilar .cuerpo p,
+#valores ul {
+  font-family: "Cambria", serif !important;
+  font-size: 1.1rem !important;
+  line-height: 1.1 !important;
+}
+
+/* Ajustes específicos para títulos dentro de contenido */
+.contenido h2,
+.contenido h3,
+.contenido h4 {
+  font-family: "Cambria", serif !important;
+}
+
+.conceptual-footer {
+  font-family: "Cambria", serif !important;
+  font-size: 1.1rem !important;
+}
+
+/* Estilo para el botón "VOLVER" flotante */
+.btn-volver-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #f2a900;
+  color: white;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(20px);
+}
+
+.btn-volver-flotante.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-volver-flotante:hover {
+  background: #333;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.contenido.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Estilo específico para el formulario */
+#form-comentarios {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1000;
+}
+
+#form-comentarios textarea {
+  min-height: 150px;
+  border: 2px solid #f2a900;
+}
+
+#form-comentarios .btn-custom {
+  background: #4caf50 !important; /* Verde para enviar */
+  transition: all 0.3s;
+}
+
+#form-comentarios .btn-custom:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -284,9 +373,8 @@ p {
   .btn-custom {
     width: 100%;
     height: auto;
-    font-size: 1rem;
-    margin: 5px auto;
-    padding: 10px 15px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
   }
   .fila-pilares {
     flex-wrap: wrap !important;
@@ -303,6 +391,7 @@ p {
   }
   .contenido {
     padding: 1rem;
+    margin: 1rem auto;
   }
 }
 

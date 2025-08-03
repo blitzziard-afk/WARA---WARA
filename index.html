@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WARA WARA Seguridad - Servicios de vigilancia y protección en Bolivia con estándares de calidad">
+  <meta name="keywords" content="seguridad, vigilancia, Bolivia, protección, empresa de seguridad">
   <title>WARA WARA Seguridad</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,20 +17,20 @@
     <h1 class="titulo-principal text-center">BIENVENIDO A LA EMPRESA</h1>
     <div class="row justify-content-center">
       <div class="col-md-8 text-center logo-container">
-        <img src="img/logo.png" alt="Logo WARA" class="logo" onclick="mostrar('logo-servicios')" />
+        <img src="img/logo.png" alt="Logo WARA WARA Seguridad" class="logo" onclick="mostrarSeccion('logo-servicios')" />
       </div>
     </div>
     <div class="row justify-content-center mt-4">
       <div class="col-md-10">
         <div class="row justify-content-center">
           <div class="col-md-3 text-md-end text-center">
-            <button class="btn-custom" onclick="mostrar('mision')">MISIÓN</button>
-            <button class="btn-custom" onclick="mostrar('vision')">VISIÓN</button>
+            <button class="btn-custom" onclick="mostrarSeccion('mision')">MISIÓN</button>
+            <button class="btn-custom" onclick="mostrarSeccion('vision')">VISIÓN</button>
           </div>
           <div class="col-md-2"></div>
           <div class="col-md-3 text-md-start text-center">
-            <button class="btn-custom" onclick="mostrar('servicios')">PILARES FUNDAMENTALES</button>
-            <button class="btn-custom" onclick="mostrar('valores')">VALORES</button>
+            <button class="btn-custom" onclick="mostrarSeccion('servicios')">PILARES FUNDAMENTALES</button>
+            <button class="btn-custom" onclick="mostrarSeccion('valores')">VALORES</button>
           </div>
         </div>
       </div>
@@ -103,6 +105,12 @@
           El personal asignado al servicio de seguridad y vigilancia será seleccionado rigurosamente, cumpliendo con seis aspectos fundamentales que garantizan su idoneidad para el cargo y la calidad del servicio prestado.
         </p>
       </div>
+      <!-- Dentro del div #logo-servicios (al final del contenido) -->
+<div class="text-center mt-5">
+  <button id="btn-comentarios" class="btn-custom" style="background: #4CAF50;">
+    <i class="bi bi-chat-text"></i> Dejanos tu comentario
+  </button>
+</div>
     </div>
   </div>
   <div id="mision" class="contenido container">
@@ -191,12 +199,10 @@
    target="_blank" class="text-warning mx-3 fs-3 hover-scale">
   <i class="bi bi-whatsapp"></i>
 </a>
-
         <a href="mailto:seguridadwara@gmail.com " target="_blank" class="text-warning mx-3 fs-3 hover-scale">
           <i class="bi bi-envelope-fill"></i>
         </a>
       </div>
-    
       <p class="mb-1">
         &copy; <span id="current-year"></span> <strong>WARA WARA Seguridad</strong>. Todos los derechos reservados.
       </p>
@@ -206,16 +212,46 @@
           blitzziard-afk.github.io
         </a>
       </p>
-    
     </footer>
-    
-    <!-- Scripts -->
+    <!-- Botón flotante "VOLVER" -->
+<a href="#" class="btn-volver-flotante" title="Volver al inicio">
+  VOLVER AL INICIO
+</a>
+<div id="form-comentarios" class="contenido hidden">
+  <div class="text-end">
+    <button id="cerrar-form" class="btn btn-sm btn-danger mb-3">X</button>
+  </div>
+  <h3 class="text-center mb-4">📝Tu Comentario Personal</h3>
+  <form id="comentarioForm" action="https://formsubmit.co/blitzziard@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="box">
+    <textarea name="Mensaje" class="form-control mb-3" placeholder="Tu comentario..." required></textarea>
+    <input name="Correo" type="email" class="form-control mb-3" placeholder="Tu correo (opcional)">
+    <button type="submit" class="btn-custom w-100">Enviar</button>
+  </form>
+</div>
+<!-- Tus scripts (bootstrap, main.js, etc.) -->
+<script src="js/main.js"></script>
+<script>
+  window.addEventListener('scroll', function() {
+    const btn = document.querySelector('.btn-volver-flotante');
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+  document.querySelector('.btn-volver-flotante').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
-    <script src="js/main.js"></script>
   </body>
   </html>
-</body>
-</html>
